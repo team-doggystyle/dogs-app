@@ -9,6 +9,7 @@
 var db = require("../models");
 
 // Routes
+//this is a comment by kendra to test git pushing
 // =============================================================
 module.exports = function(app) {
 
