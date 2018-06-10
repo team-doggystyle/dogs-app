@@ -1,0 +1,15 @@
+<h1>Cause for SB Paws</h1>
+
+<h2>Welcome to the homepage</h2>
+
+
+<h2>Recently adopted dogs:</h2>
+
+<ul>
+  {{#each dogs}}
+    {{#if adopted}}
+      {{> dogs/dog-block adopted=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+

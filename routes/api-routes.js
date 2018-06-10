@@ -2,83 +2,33 @@
 // api-routes.js - this file offers a set of routes for displaying and saving data to the db
 // *********************************************************************************
 
+var models  = require('../models');
+var express = require('express');
+var router  = express.Router();
 // Dependencies
 // =============================================================
-
-// Requiring our Todo model
-var db = require("../models");
+var path = require("path");
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+router.get("/api/dogs/", function(req, res) {
 
-  // GET route for getting all of the posts
-  app.get("/api/posts/", function(req, res) {
-    db.Post.findAll({})
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
-  });
+});
+router.get("/api/dogs/:id", function(req, res) {
 
-  // Get route for returning posts of a specific category
-  app.get("/api/posts/category/:category", function(req, res) {
-    db.Post.findAll({
-      where: {
-        category: req.params.category
-      }
-    })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
-  });
+});
+router.get("/api/dogs/adopted", function(req, res) {
 
-  // Get route for retrieving a single post
-  app.get("/api/posts/:id", function(req, res) {
-    db.Post.findOne({
-      where: {
-        id: req.params.id
-      }
-    })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
-  });
+});
+router.get("/api/applications", function(req, res) {
 
-  // POST route for saving a new post
-  app.post("/api/posts", function(req, res) {
-    console.log(req.body);
-    db.Post.create({
-      title: req.body.title,
-      body: req.body.body,
-      category: req.body.category
-    })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
-  });
+});
+router.post("/api/applications", function(req, res) {
 
-  // DELETE route for deleting posts
-  app.delete("/api/posts/:id", function(req, res) {
-    db.Post.destroy({
-      where: {
-        id: req.params.id
-      }
-    })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
-  });
+});
+router.delete("/api/applications", function(req, res) {
 
-  // PUT route for updating posts
-  app.put("/api/posts", function(req, res) {
-    db.Post.update(req.body,
-      {
-        where: {
-          id: req.body.id
-        }
-      })
-      .then(function(dbPost) {
-        res.json(dbPost);
-      });
-  });
-};
+});
+
+// Export routes for server.js to use.
+module.exports = router;
