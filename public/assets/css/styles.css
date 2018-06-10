@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  font: 16px/1 'Montserrat', sans-serif;
+  background: #ffffff;
+  color: #415161;
+}
+
 button.submit {
   float: right;
 }
@@ -15,3 +27,160 @@ button.edit {
   float: right;
   margin: 5px;
 }
+
+#header-wrap {
+  width: 100%;
+  text-align: center;
+  background: #ffffff;
+  z-index: 13;
+}
+
+div {
+  display: block;
+}
+
+.nav-trigger {
+  display: none;
+  cursor: pointer;
+}
+
+#logo {
+  font-size: 2.75em;
+  font-weight: bold;
+  color: #415161;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 0 .5em;
+}
+
+.wsite-logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+a {
+  color: #546270;
+  text-decoration: none;
+  outline: 0;
+}
+
+#logo img {
+  max-height: 200px;
+  max-width: 100%;
+  margin: 0 !important;
+}
+
+.wsite-logo a img {
+  border: 0;
+}
+
+.wsite-logo img,
+.wsite-logo span {
+  vertical-align: top !important;
+}
+
+#nav {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e9eb;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+#nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: 0;
+}
+
+#nav ul li a {
+  display: block;
+  color: 7B8D8E;
+  padding: 1em .75em;
+  font-size: 1.15em;
+}
+
+.wsite-menu-default a {
+  font-family: "Montserrat" !important;
+  text-transform: uppercase !important;
+}
+
+ .wsite-background {
+  background-size: cover !important;
+  width:100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1494913148647-353ae514b35e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=690fde360cf073d36a84808c5f655c0e&auto=format&fit=crop&w=2104&q=80") !important;
+  background-repeat: no-repeat !important; 
+
+   background-position: 50% 50% !important;
+  background-color: transparent !important;
+  background-color: red;
+  
+}
+
+a {
+  color: #546270;
+  text-decoration: none;
+  outline: 0;
+}
+
+#banner-wrap {
+  width: 100%;
+  height: 500px;
+  /* display: table; */
+  background: #f9fafb;
+  border-bottom: 1px solid #e6e9eb;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  #header-wrap .nav-trigger {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #header-wrap .nav-trigger {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #header-wrap .nav-trigger,
+  #header-wrap #logo {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-trigger {
+    padding: 10px;
+  }
+}
+@media (max-width: 1024px) {
+.nav-trigger span.mobile {
+    display: block;
+    height: 2px;
+    width: 20px;
+    position: relative;
+    margin: 0 auto 5px;
+    background: #415161;
+}
+}
+
+
