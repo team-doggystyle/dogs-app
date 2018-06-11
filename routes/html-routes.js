@@ -38,8 +38,9 @@ router.get("/dogs/:id", function(req, res) {
   // });
 });
 router.get("/adopt", function(req, res) {
-
+  res.render("adopt");
 });
+
 router.post("/adopt/application", function(req, res) {
 });
 
