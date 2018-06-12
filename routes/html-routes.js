@@ -47,11 +47,15 @@ router.get("/dogs/addnewdog", function(req, res) {
 //   res.render("adopt");
 // });
 
+
+router.get("/application", function(req, res) {
+  res.render("application")
+});
+
 // router.post("/adopt/application", function(req, res) {
 // });
 
 // router.get("/help", function(req, res) {
-
 // });
 // router.post("/help/donate", function(req, res) {
 
