@@ -43,9 +43,9 @@ router.get("/dogs/addnewdog", function(req, res) {
 //   //   res.render("index", hbsObject);
 //   // });
 // });
-// router.get("/adopt", function(req, res) {
-//   res.render("adopt");
-// });
+router.get("/adopt", function(req, res) {
+  res.render("adopt");
+});
 
 
 router.get("/application", function(req, res) {
