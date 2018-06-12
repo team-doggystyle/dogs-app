@@ -4,12 +4,12 @@
 
 // Dependencies
 // =============================================================
-
+var express = require('express')
+var app = express()
 // Requiring our Todo model
-var db = require("../models");
+var db = require("../models/dog.js");
 
 // Routes
-//this is a comment by kendra to test git pushing
 // =============================================================
 module.exports = function(app) {
 
