@@ -45,8 +45,8 @@ router.get("/application", function(req, res) {
   res.render("application")
 });
 
-router.post("/adopt/application", function(req, res) {
-});
+// router.post("/adopt/application", function(req, res) {
+// });
 
 router.get("/help", function(req, res) {
 
