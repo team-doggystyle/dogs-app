@@ -28,18 +28,25 @@ router.get("/dogs", function(req, res) {
     res.render("dogs", hbsObject);
   });
 });
-router.get("/dogs/:id", function(req, res) {
-  // dog.all(function(data) {
-  //   var hbsObject = {
-  //     dogs: data
-  //   };
-  //   console.log(hbsObject);
-  //   res.render("index", hbsObject);
-  // });
+// router.get("/dogs/:id", function(req, res) {
+ 
+// });
+router.get("/dogs/addnewdog", function(req, res) {
+  res.render("addnewdog");
 });
-router.get("/adopt", function(req, res) {
-  res.render("adopt");
-});
+// router.post("/dogs/addnewdog", function(req, res) {
+//   // dog.all(function(data) {
+//   //   var hbsObject = {
+//   //     dogs: data
+//   //   };
+//   //   console.log(hbsObject);
+//   //   res.render("index", hbsObject);
+//   // });
+// });
+// router.get("/adopt", function(req, res) {
+//   res.render("adopt");
+// });
+
 
 router.get("/application", function(req, res) {
   res.render("application")
@@ -48,12 +55,11 @@ router.get("/application", function(req, res) {
 // router.post("/adopt/application", function(req, res) {
 // });
 
-router.get("/help", function(req, res) {
+// router.get("/help", function(req, res) {
+// });
+// router.post("/help/donate", function(req, res) {
 
-});
-router.post("/help/donate", function(req, res) {
-
-});
+// });
  module.exports = router;
 // module.exports = function(app) {
 
