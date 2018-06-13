@@ -38,6 +38,10 @@ router.get("/adopt", function(req, res) {
   res.render("adopt");
 });
 
+router.get("/about", function(req, res) {
+  res.render("about");
+});
+
 router.get("/application", function(req, res) {
   res.sendFile(path.join(__dirname, "../public/assets/application.html"));
 });
