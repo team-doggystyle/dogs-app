@@ -20,14 +20,14 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [1]
       }
-    }
+    },
     age_months: {
       type: DataTypes.INTEGER,
       allowNull: true,
       validate: {
         len: [1]
       }
-    }
+    },
   });
   return Dog;
 };
