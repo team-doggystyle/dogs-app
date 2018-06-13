@@ -42,7 +42,7 @@ router.get("/adopt", function(req, res) {
 });
 
 router.get("/application", function(req, res) {
-  res.render("application")
+  res.sendFile(path.join(__dirname, "../public/assets/application.html"));
 });
 
 // router.post("/adopt/application", function(req, res) {
