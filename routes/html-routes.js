@@ -16,7 +16,7 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../home.html"));
   });
   // User goes to page with adoptable dogs
-  app.get("/available_dogs", function (req, res) {
+  app.get("/dog", function (req, res) {
     res.sendFile(path.join(__dirname, "../dog.html"));
   });
   // User goes to page with info about adoption
