@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var Dog = sequelize.define("Dog", {
+  var Dog = sequelize.define("dog", {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -24,10 +24,10 @@ module.exports = function(sequelize, DataTypes) {
     age_months: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      validate: {
-        len: [1]
-      }
-    },
+    }
   });
+  // Dog.associate = function(models) {
+  //   models.User.hasMany(models.Photo);
+  // };
   return Dog;
 };
