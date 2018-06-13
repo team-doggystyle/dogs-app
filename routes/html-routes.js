@@ -34,15 +34,23 @@ router.get("/dogs", function(req, res) {
 router.get("/dogs/addnewdog", function(req, res) {
   res.render("addnewdog");
 });
-// router.post("/dogs/addnewdog", function(req, res) {
-//   // dog.all(function(data) {
-//   //   var hbsObject = {
-//   //     dogs: data
-//   //   };
-//   //   console.log(hbsObject);
-//   //   res.render("index", hbsObject);
-//   // });
-// });
+router.post("/dogs/addnewdog", function(req, res) {
+  models.dog.create({ 
+    name: req.body.name,
+    breed: req.body.breed,
+    age_years: req.body.age_years,
+    age_months: req.body.age_months,
+  })
+    // pass the result of our call
+    .then(function(dbDog) {
+      // log the result to our terminal/bash window
+      console.log(dbDog);
+      // redirect
+      res.redirect("/dogs/addnewdog");
+    });
+});
+
+});
 // router.get("/adopt", function(req, res) {
 //   res.render("adopt");
 // });

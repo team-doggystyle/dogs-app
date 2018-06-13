@@ -3,7 +3,7 @@
     "username": "root",
     "password": "rampage",
     "password": "",
-    "database": "dogs",
+    "database": "rescue",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

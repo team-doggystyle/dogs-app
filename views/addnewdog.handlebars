@@ -80,7 +80,18 @@
   <h2>Add a dog to our database:</h2>
 
 <h2>Add a Dog</h2>
-<form class="create-form">
+<form>
+Select your favorite fruit:
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Orange</option>
+  <option>Pineapple</option>
+  <option>Banana</option>
+</select>
+<br><br>
+<input type="button" onclick="getOption()" value="Click Me!">
+</form>
+<form class="create-form addnewdog" action="/dogs/addnewdog" method="post">
 
   <div class="form-group">
     <label for="ca">Dog Name:</label>
@@ -90,7 +101,18 @@
   </div>
 
   <div class="form-group">
-    <div>Age: </div>
+    <span>Age: </span>
+    <form>
+    Select your favorite fruit:
+    <select id="mySelect">
+      <option>Apple</option>
+      <option>Orange</option>
+      <option>Pineapple</option>
+      <option>Banana</option>
+    </select>
+    <br><br>
+    <input type="button" onclick="getOption()" value="Click Me!">
+    </form>
     <div class="custom-select" style="width:200px;">
       <select>
         <option value="0">Years:</option>
@@ -137,6 +159,9 @@
     </div>
   </div>
   <button type="submit">Add Dog</button>
+</form>
+<form action="/" method="post">
+  <button type="reset">Reset</button>
 </form>
 
 <h2>Recently adopted dogs:</h2>
