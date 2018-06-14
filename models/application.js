@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var Application = sequelize.define("application", {
+    var Application = sequelize.define("Application", {
         firstName: {
             type: DataTypes.STRING,
             allowNull: false,
