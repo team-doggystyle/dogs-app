@@ -36,9 +36,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-// var routes = require("./controllers/dogsController.js");
+var apiRoutes = require("./routes/api-routes.js");
 
-// app.use(routes);
+app.use(apiRoutes);
 
 // Not using following files - using controller-based routing instead
 // // Routes
