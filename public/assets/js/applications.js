@@ -16,6 +16,7 @@ $(document).ready(function () {
             console.log("From the server", data)
         });
 
+        //Modal
         $('#registration').modal('show');
         event.preventDefault();
 
