@@ -49,10 +49,12 @@ router.get("/application", function(req, res) {
 // router.post("/adopt/application", function(req, res) {
 // });
 
-router.get("/help", function(req, res) {
-      res.sendFile(path.join(__dirname, "../help.html"));
+router.get("/donate", function(req, res) {
+      res.render("donate")
 });
 // router.post("/help/donate", function(req, res) {
+
+
 
 // });
  module.exports = router;
