@@ -1,6 +1,6 @@
-// *********************************************************************************
-// api-routes.js - this file offers a set of routes for displaying and saving data to the db
-// *********************************************************************************
+// // *********************************************************************************
+// // api-routes.js - this file offers a set of routes for displaying and saving data to the db
+// // *********************************************************************************
 
 var db  = require('../models');
 var express = require('express');
@@ -43,3 +43,4 @@ router.delete("/api/applications", function(req, res) {
 
 // Export routes for server.js to use.
 module.exports = router;
+

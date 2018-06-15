@@ -10,6 +10,7 @@ var path = require("path");
 
 // Routes
 // =============================================================
+
 router.get("/", function(req, res) {
    res.render("index");
 });
