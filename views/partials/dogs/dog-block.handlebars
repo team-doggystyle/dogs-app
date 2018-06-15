@@ -1,0 +1,9 @@
+<li>
+	{{name}}
+
+	<button class="change-adopted" data-id="{{id}}" data-newadopted="{{adopted}}">
+		{{#if adopted}}Adopted!{{else}}Available for adoption!{{/if}}
+	</button>
+
+	<button class="delete-dog" data-id="{{this.id}}">DELETE!</button>
+</li>

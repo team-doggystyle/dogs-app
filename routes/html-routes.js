@@ -1,42 +1,61 @@
 // *********************************************************************************
 // html-routes.js - this file offers a set of routes for sending users to the various html pages
 // *********************************************************************************
-
+var models  = require('../models');
+var express = require('express');
+var router  = express.Router();
 // Dependencies
 // =============================================================
 var path = require("path");
 
 // Routes
 // =============================================================
-module.exports = function (app) {
 
-  // Each of the below routes handles the HTML page that the user gets sent to.
-  // User goes to main page
-  app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "../home.html"));
+router.get("/", function(req, res) {
+   res.render("index");
+});
+
+router.get("/dogs", function(req, res) {
+  models.dog.findAll({
+    // where: {
+    //   adopted: false
+    // }
+  }).then(function(dogs) {
+    var hbsObject = {
+      dogs: dogs
+    };
+    console.log(hbsObject);
+    res.render("dogs", hbsObject);
   });
-  // User goes to page with adoptable dogs
-  app.get("/dog", function (req, res) {
-    res.sendFile(path.join(__dirname, "../dog.html"));
-  });
-  // User goes to page with info about adoption
-  app.get("/adopt", function (req, res) {
-    res.sendFile(path.join(__dirname, "../adopt.html"));
-  });
-  // User goes to page with adoption application
-  app.get("/application", function (req, res) {
-    res.sendFile(path.join(__dirname, "../adopt/application.html"));
-  });
-  // User goes to page with info about the user can help the dog rescue
-  app.get("/help", function (req, res) {
-    res.sendFile(path.join(__dirname, "../help.html"));
-  });
-  // User goes to page with info about helping by donating money
-  app.get("/donate", function (req, res) {
-    res.sendFile(path.join(__dirname, "../help/donate.html"));
-  });
-  // If no matching route is found, default to home
-  app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "../home.html"));
-  });
-};
+});
+// router.get("/dogs/:id", function(req, res) {
+ 
+// });
+router.get("/dogs/addnewdog", function(req, res) {
+  res.render("addnewdog");
+});
+
+router.get("/adopt", function(req, res) {
+  res.render("adopt");
+});
+
+router.get("/about", function(req, res) {
+  res.render("about");
+});
+
+router.get("/application", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/assets/application.html"));
+});
+
+// router.post("/adopt/application", function(req, res) {
+// });
+
+router.get("/donate", function(req, res) {
+      res.render("donate")
+});
+// router.post("/help/donate", function(req, res) {
+
+
+
+// });
+ module.exports = router;
