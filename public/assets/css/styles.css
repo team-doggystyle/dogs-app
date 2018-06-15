@@ -101,6 +101,9 @@ a {
   border-bottom: 1px solid #e6e9eb;
 }
 
+.navbar-brand {
+  position: center
+}
 .container {
   display: flex;
   justify-content: center;
