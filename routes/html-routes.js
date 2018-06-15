@@ -43,6 +43,7 @@ router.get("/about", function(req, res) {
 });
 
 router.get("/application", function(req, res) {
+  // FIXME: CHANGE LINE BELOW TO DELIVER TEMPLATE, NOT STATIC HTML
   res.sendFile(path.join(__dirname, "../public/assets/application.html"));
 });
 
