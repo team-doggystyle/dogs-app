@@ -13,6 +13,8 @@ var handlebars = require('handlebars'),
 // =============================================================
 var app = express();
 var PORT = process.env.PORT || 8080;
+var seeder = require('./seeder')
+
 
 // Requiring our models for syncing
 var db = require("./models");
@@ -53,8 +55,14 @@ app.use('/', htmlRoutes);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.sequelize.sync({ force: true }).then(function() {
-  app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
+
+db.sequelize
+  .sync()
+  .then(function() {
+    return seeder.seed(db)
+  })
+  .then(function() {
+    app.listen(PORT, function() {
+      console.log("App now listening on port:", PORT);
+    });
   });
-});
