@@ -7,11 +7,12 @@ module.exports = {
     let dogs = ['Cheeseburger', 'Teriyaki Burger', 'Bacon Burger', 'Veggie Burger', 'Impossible Burger']
 
     let dogCreationPromises = dogs.map(function(dog) {
-      return db.Dog.create({ name: dog })
+        console.log("Testing",db.Dog)
+      return db.Dog.create({ name: dog,
+      breed: dog
     })
-
+      
+    })
     return Promise.all( dogCreationPromises )
-
   }
-
 }

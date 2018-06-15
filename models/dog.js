@@ -1,25 +1,25 @@
 module.exports = function(sequelize, DataTypes) {
-  var Dog = sequelize.define("dog", {
+  var Dog = sequelize.define("Dog", {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [1]
-      }
+      // validate: {
+      //   len: [1]
+      // }
     },
     breed: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [1]
-      }
+      // validate: {
+      //   len: [1]
+      // }
     },
     age_years: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      validate: {
-        len: [1]
-      }
+      // validate: {
+      //   len: [1]
+      // }
     },
     age_months: {
       type: DataTypes.INTEGER,
@@ -29,5 +29,6 @@ module.exports = function(sequelize, DataTypes) {
   // Dog.associate = function(models) {
   //   models.User.hasMany(models.Photo);
   // };
+  console.log("What is a dog: ",Dog)
   return Dog;
 };
