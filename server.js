@@ -6,7 +6,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
-var handlebars = require('handlebars'),
+var handlebars = require('handlebars');
   fs = require('fs');
 
 // Sets up the Express App

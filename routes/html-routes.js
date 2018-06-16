@@ -14,6 +14,10 @@ router.get("/", function(req, res) {
    res.render("index");
 });
 
+router.get("/home", function(req, res) {
+   res.render("index");
+});
+
 router.get("/dogs", function(req, res) {
   models.dog.findAll({
     // where: {
@@ -54,7 +58,6 @@ router.get("/donate", function(req, res) {
       res.render("donate")
 });
 // router.post("/help/donate", function(req, res) {
-
 
 
 // });
