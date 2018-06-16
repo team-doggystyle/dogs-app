@@ -106,6 +106,12 @@ a {
 .navbar-brand {
   position: center
 }
+
+.nav-link {
+  color: black;
+  margin: -17px;
+}
+
 .container {
   display: flex;
   justify-content: center;
