@@ -11,12 +11,29 @@ var path = require("path");
 
 // Routes
 // =============================================================
+// router.get("/", function(req, res) {
+//    res.render("index");
+// });
+
+// Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-   res.render("index");
+ models.Dog.findAll().then(function(data){
+    console.log(typeof data)
+    var dogObj = {
+      dogs: data
+    };
+     res.render("index", dogObj)
+ })
 });
 
 router.get("/home", function(req, res) {
-   res.render("home");
+  models.Dog.findAll().then(function(data){
+    console.log(typeof data)
+    var dogObj = {
+      dogs: data
+    };
+     res.render("index", dogObj)
+ })
 });
 
 router.get("/dogs", function(req, res) {
@@ -35,9 +52,9 @@ router.get("/dogs", function(req, res) {
 // router.get("/dogs/:id", function(req, res) {
  
 // });
-router.get("/dogs/addnewdog", function(req, res) {
-  res.render("addnewdog");
-});
+// router.get("/dogs/addnewdog", function(req, res) {
+//   res.render("addnewdog");
+// });
 
 router.post("/dogs/addnewdog", function(req, res) {
   models.dog.create({ 
@@ -67,8 +84,7 @@ router.get("/about", function(req, res) {
 });
 
 router.get("/application", function(req, res) {
-  // FIXME: CHANGE LINE BELOW TO DELIVER TEMPLATE, NOT STATIC HTML
-  res.sendFile(path.join(__dirname, "../public/assets/application.html"));
+  res.render("application");
 });
 
 // router.post("/adopt/application", function(req, res) {
@@ -78,7 +94,6 @@ router.get("/donate", function(req, res) {
       res.render("donate")
 });
 // router.post("/help/donate", function(req, res) {
-
 
 
 // });

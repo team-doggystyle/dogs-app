@@ -13,8 +13,18 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true,
     },
     age_months: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    adopted: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
     }
+    // photo: {
+      
+    // type: DataTypes.STRING, 
+    // allowNull: false  
+    // } 
   });
   // Dog.associate = function(models) {
   //   models.User.hasMany(models.Photo);
