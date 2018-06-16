@@ -103,6 +103,9 @@ a {
 
 }
 
+.navbar-brand {
+  position: center
+}
 .container {
   display: flex;
   justify-content: center;
