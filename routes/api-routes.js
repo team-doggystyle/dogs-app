@@ -8,6 +8,7 @@ var router  = express.Router();
 // Dependencies
 // =============================================================
 var path = require("path");
+console.log("Test")
 
 // Routes
 // =============================================================
