@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +25,7 @@
     <div id="logo">
       <span class="wsite-logo">
 
-        <a href="/">
+        <a href="/home">
           <img src="assets/img/logo1.jpg" alt="Cause For SB Paws">
         </a>
 
@@ -34,53 +35,7 @@
       <div class="sticky-wrapper">
         <div class="sticky-wrapper">
           <div class="sticky-wrapper">
-            <div id="nav">
-              <div class="container">
-                <ul class="wsite-menu-default">
-                  <li id="pg894183582840226118" class="wsite-menu-item-wrap  wsite-nav-1" style="position: relative;">
-                    <a class="wsite-menu-item">
-                      DOGS
-                    </a>
-
-                  </li>
-                  <li id="pg445290929938929396" class="wsite-menu-item-wrap  wsite-nav-2">
-                    <a href="/adopt" class="wsite-menu-item">
-                      ADOPT
-                    </a>
-                  </li>
-                  <li id="pg269826005965053434" class="wsite-menu-item-wrap  wsite-nav-3">
-                    <a class="wsite-menu-item">
-                      DONATE
-                    </a>
-                  </li>
-                  <li id="pg405857749347399896" class="wsite-menu-item-wrap  wsite-nav-4">
-                    <a class="wsite-menu-item">
-                      VOLUNTEER
-                    </a>
-
-                  </li>
-                  <li id="pg800683356502321881" class="wsite-menu-item-wrap  wsite-nav-5">
-                    <a class="wsite-menu-item">
-                      ABOUT
-                    </a>
-
-                  </li>
-                  <li id="pg355244031432604311" class="wsite-menu-item-wrap  wsite-nav-6">
-                    <a class="wsite-menu-item">
-                      RESOURCES
-                    </a>
-
-                  </li>
-                  <li id="pg773233856539588136" class="wsite-menu-item-wrap  wsite-nav-7">
-                    <a class="wsite-menu-item">
-                      SUCCESS
-                    </a>
-
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            {{> navbar }}
         </div>
       </div>
     </div>
@@ -90,9 +45,9 @@
     <div class="home_background"></div>
   </div>
 
-  <h2>Welcome to the homepage</h2>
+  <h2 style="margin-top: 50px; font-size: 30px;">JOIN THE CAUSE FOR SB PAWS!</h2>
 
-  <h2>Recently adopted dogs:</h2>
+
 
   <ul>
     {{#each dogs}} {{#if adopted}} {{> dogs/dog-block adopted=false}} {{/if}} {{/each}}
@@ -105,3 +60,4 @@
 </body>
 
 </html>
+
