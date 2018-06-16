@@ -11,7 +11,7 @@ var path = require("path");
 // Routes
 // =============================================================
 router.get("/", function(req, res) {
-   res.render("home");
+   res.render("index");
 });
 
 router.get("/home", function(req, res) {
@@ -34,9 +34,9 @@ router.get("/dogs", function(req, res) {
 // router.get("/dogs/:id", function(req, res) {
  
 // });
-router.get("/dogs/addnewdog", function(req, res) {
-  res.render("addnewdog");
-});
+// router.get("/dogs/addnewdog", function(req, res) {
+//   res.render("addnewdog");
+// });
 
 router.get("/adopt", function(req, res) {
   res.render("adopt");
@@ -47,7 +47,6 @@ router.get("/about", function(req, res) {
 });
 
 router.get("/application", function(req, res) {
-  // FIXME: CHANGE LINE BELOW TO DELIVER TEMPLATE, NOT STATIC HTML
   res.render("application");
 });
 
