@@ -92,7 +92,7 @@ a {
 }
 
 #nav {
-  position: relative;
+  position: fixed;
   width: 100%;
   overflow: hidden;
   background: #ffffff;
@@ -122,6 +122,12 @@ a {
   width: 200px;
   height: 200px;
 }
+
+.nav-link {
+  color: black;
+  margin: -17px;
+}
+
 .container {
   display: flex;
   justify-content: center;
