@@ -1,11 +1,12 @@
 // *********************************************************************************
 // html-routes.js - this file offers a set of routes for sending users to the various html pages
 // *********************************************************************************
+
 var models  = require('../models');
 var express = require('express');
 var router  = express.Router();
-// Dependencies
-// =============================================================
+var jsdom = require('jsdom');
+$ = require('jquery')(new jsdom.JSDOM().window);
 var path = require("path");
 
 // Routes
@@ -44,13 +45,23 @@ router.post("/dogs/addnewdog", function(req, res) {
     // pass the result of our call
     .then(function(dbDog) {
       // log the result to our terminal/bash window
-      console.log(dbDog);
-      // redirect
-      res.redirect("/dogs/addnewdog");
+      // console.log(dbDog);
+      // console.log("dbDog.dataValues.name", dbDog.dataValues.name)
+      var hbsObject = { name: dbDog.dataValues.name };
+      res.render("addnewdog", hbsObject);
+
+
+      // $(".form-helper").text(dbDog.dataValues.name + " has been added!");
+      // // displayUpdate(dbDog.dataValues.name);
+      // // redirect
+      // res.redirect("/dogs/addnewdog");
     });
 });
 
-});
+// function displayUpdate(dogName) {
+//   $(".form-helper").html(dogName + " has been added!");
+// }
+
 // router.get("/adopt", function(req, res) {
 //   res.render("adopt");
 // });
