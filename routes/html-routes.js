@@ -51,9 +51,9 @@ router.get("/dogs", function(req, res) {
 // router.get("/dogs/:id", function(req, res) {
  
 // });
-router.get("/dogs/addnewdog", function(req, res) {
-  res.render("addnewdog");
-});
+// router.get("/dogs/addnewdog", function(req, res) {
+//   res.render("addnewdog");
+// });
 
 router.get("/adopt", function(req, res) {
   res.render("adopt");
@@ -64,8 +64,7 @@ router.get("/about", function(req, res) {
 });
 
 router.get("/application", function(req, res) {
-  // FIXME: CHANGE LINE BELOW TO DELIVER TEMPLATE, NOT STATIC HTML
-  res.sendFile(path.join(__dirname, "../public/assets/application.html"));
+  res.render("application");
 });
 
 // router.post("/adopt/application", function(req, res) {
@@ -75,7 +74,6 @@ router.get("/donate", function(req, res) {
       res.render("donate")
 });
 // router.post("/help/donate", function(req, res) {
-
 
 
 // });
