@@ -15,11 +15,8 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 var seeder = require('./seeder')
 
-
 // Requiring our models for syncing
 var db = require("./models");
-
-
 
 // Static directory
 app.use(express.static("public"));
@@ -57,7 +54,7 @@ app.use('/', htmlRoutes);
 // =============================================================
 
 db.sequelize
-  .sync()
+  .sync({force: true})
   .then(function() {
     return seeder.seed(db)
   })
