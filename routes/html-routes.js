@@ -10,12 +10,29 @@ var path = require("path");
 
 // Routes
 // =============================================================
+// router.get("/", function(req, res) {
+//    res.render("index");
+// });
+
+// Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-   res.render("index");
+ models.Dog.findAll().then(function(data){
+    console.log(typeof data)
+    var dogObj = {
+      dogs: data
+    };
+     res.render("index", dogObj)
+ })
 });
 
 router.get("/home", function(req, res) {
-   res.render("index");
+  models.Dog.findAll().then(function(data){
+    console.log(typeof data)
+    var dogObj = {
+      dogs: data
+    };
+     res.render("index", dogObj)
+ })
 });
 
 router.get("/dogs", function(req, res) {
