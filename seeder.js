@@ -2,47 +2,51 @@
 
 module.exports = {
 
-  seed: function(db) {
+  seed: function (db) {
 
-    let dogs = [
-      {
+    let dogs = [{
         name: "Bella",
         breed: "Huskey",
-        adopted: true,
-        // photo: "../img/"
+        adopted: false,
+        photo: "/assets/img/logo1.jpg"
       },
       {
         name: "Lucy",
         breed: "Jack Russell",
-        adopted: true
+        adopted: true,
+        photo: "/assets/img/logo1.jpg"
       },
       {
         name: "Daisy",
         breed: "Australian Shepherd",
-        adopted: true
+        adopted: true,
+        photo: "/assets/img/logo1.jpg"
       },
       {
         name: "Bailey",
         breed: "German Shepherd",
-        adopted: true
+        adopted: false,
+        photo: "/assets/img/logo1.jpg"
       },
       {
         name: "Luna",
         breed: "Pit bull",
-        adopted: true
+        adopted: true,
+        photo: "/assets/img/logo1.jpg"
       },
-  
+
     ]
- 
-    let dogCreationPromises = dogs.map(function(dog) {
-        console.log("Testing",db.Dog)
-      return db.Dog.create({ 
-      name: dog.name,
-      breed: dog.breed,
-      adopted: dog.adopted
+
+    let dogCreationPromises = dogs.map(function (dog) {
+      console.log("Testing", db.Dog)
+      return db.Dog.create({
+        name: dog.name,
+        breed: dog.breed,
+        adopted: dog.adopted,
+        photo: dog.photo
       })
-      
+
     })
-    return Promise.all( dogCreationPromises )
+    return Promise.all(dogCreationPromises)
   }
 }
