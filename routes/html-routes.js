@@ -25,18 +25,8 @@ router.get("/", function(req, res) {
  })
 });
 
-router.get("/home", function(req, res) {
-  models.Dog.findAll().then(function(data){
-    console.log(typeof data)
-    var dogObj = {
-      dogs: data
-    };
-     res.render("index", dogObj)
- })
-});
-
 router.get("/dogs", function(req, res) {
-  models.dog.findAll({
+  models.Dog.findAll({
     // where: {
     //   adopted: false
     // }
@@ -48,12 +38,28 @@ router.get("/dogs", function(req, res) {
     res.render("dogs", hbsObject);
   });
 });
-// router.get("/dogs/:id", function(req, res) {
- 
-// });
-// router.get("/dogs/addnewdog", function(req, res) {
-//   res.render("addnewdog");
-// });
+
+router.get("/dogs/addnewdog", function(req, res) {
+  res.render("addnewdog")
+});
+
+router.post("/dogs/addnewdog", function(req, res) {
+  models.dog.create({ 
+    name: req.body.name,
+    breed: req.body.breed,
+    age_years: req.body.age_years,
+    age_months: req.body.age_months,
+  })
+    // pass the result of our call
+    .then(function(dbDog) {
+      // log the result to our terminal/bash window
+      // console.log(dbDog);
+      // console.log("dbDog.dataValues.name", dbDog.dataValues.name)
+      var hbsObject = { name: dbDog.dataValues.name };
+      res.render("addnewdog", hbsObject);
+
+    });
+});
 
 router.get("/adopt", function(req, res) {
   res.render("adopt");
