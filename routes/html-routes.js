@@ -1,10 +1,11 @@
 // *********************************************************************************
 // html-routes.js - this file offers a set of routes for sending users to the various html pages
 // *********************************************************************************
-
 var models  = require('../models');
 var express = require('express');
 var router  = express.Router();
+// Dependencies
+// =============================================================
 var path = require("path");
 
 // Routes
@@ -47,13 +48,6 @@ router.get("/dogs", function(req, res) {
     res.render("dogs", hbsObject);
   });
 });
-// router.get("/dogs/:id", function(req, res) {
- 
-// });
-// router.get("/dogs/addnewdog", function(req, res) {
-//   res.render("addnewdog");
-// });
-
 router.post("/dogs/addnewdog", function(req, res) {
   models.dog.create({ 
     name: req.body.name,
@@ -71,7 +65,6 @@ router.post("/dogs/addnewdog", function(req, res) {
 
     });
 });
-
 
 router.get("/adopt", function(req, res) {
   res.render("adopt");
