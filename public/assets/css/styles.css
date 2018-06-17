@@ -134,6 +134,12 @@ a {
   margin: 0 auto;
   max-width: 1024px;
 }
+.adopt_container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  /* max-width: 1024px; */
+}
 
 .adoption_info {
   font-family: "Open Sans";
@@ -308,6 +314,8 @@ a {
 #main-wrap {
   padding: 40px;
   text-align: center;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /***** FORMS CSS *****/
