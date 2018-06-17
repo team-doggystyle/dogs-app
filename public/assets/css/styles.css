@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  padding-bottom: 30rem;
   font-size: 100%;
   border: 0;
   width: 100%;
@@ -80,7 +79,7 @@ a {
 #logo img {
   max-height: 200px;
   max-width: 100%;
-  margin: 0 !important;
+  margin: 0;
 }
 
 .wsite-logo a img {
@@ -119,6 +118,7 @@ a {
   width: 50px;
   height: 50px;
 }
+
 #dog-photo-block {
   width: 200px;
   height: 200px;
@@ -135,6 +135,7 @@ a {
   margin: 0 auto;
   max-width: 1024px;
 }
+
 .adopt_container {
   display: flex;
   justify-content: center;
@@ -190,110 +191,100 @@ a {
 }
 
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 .home_background {
-background-size: cover !important;
-width: 100%;
-height: 110%;
-background-image: url("https://images.unsplash.com/photo-1494913148647-353ae514b35e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=690fde360cf073d36a84808c5f655c0e&auto=format&fit=crop&w=2104&q=80") !important;
-background-repeat: no-repeat !important; 
-background-position: 50% 50% !important;
-background-color: transparent !important;
-background-color: red;
+  background-size: cover;
+  width: 100%;
+  height: 110%;
+  background-image: url("/assets/img/home_banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+  
+}
+
+.dogs_background {
+  background-size: cover;
+  width: 100%;
+  height: 110%;
+  background-image: url("/assets/img/dogs_banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+  
 }
 
 .adopt_background {
-  background-size: cover !important;
+  background-size: cover;
   width: 100%;
   height: 110%;
-  background-image: url("https://images.unsplash.com/photo-1518887371124-412923b6ccff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ca7e3d745d3d5d14cad59a77b994de4&auto=format&fit=crop&w=3900&q=80") !important;
-  background-repeat: no-repeat !important;
-  background-position: 50% 50% !important;
-  background-color: transparent !important;
-  background-color: red;
+  background-image: url("/assets/img/adopt_banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+  
 }
 
 .about_background {
-  background-size: cover !important;
+  background-size: cover;
   width: 100%;
   height: 110%;
-  background-image: url("https://images.unsplash.com/photo-1477973770766-6228305816df?ixlib=rb-0.3.5&s=de44887a3f5801745617e32011a469d0&auto=format&fit=crop&w=1649&q=80") !important;
-  background-repeat: no-repeat !important;
-  background-position: 50% 50% !important;
-  background-color: transparent !important;
-  background-color: red;
-}
-
-.adopt_application_background {
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://images.unsplash.com/photo-1525253086316-d0c936c814f8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8736d12c2b307c3148af61b63811e38&auto=format&fit=crop&w=3900&q=80");
-  background-repeat: no-repeat !important;
-  background-position: 50% 50% !important;
-  background-color: transparent !important;
-  background-color: red;
-}
-
-.application_background {
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://images.unsplash.com/photo-1455103493930-a116f655b6c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d1ddc1fc1799c2f28d379be5f38e33ad&auto=format&fit=crop&w=2102&q=80");
-  background-repeat: no-repeat !important;
-  background-position: 50% 50% !important;
-  background-color: transparent !important;
-  background-color: red;
+  background-image: url("/assets/img/about_banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+  
 }
 
 .donate_background {
-  background-size: cover !important;
+  background-size: cover;
   width: 100%;
   height: 110%;
-  background-image: url("https://images.unsplash.com/photo-1525253013412-55c1a69a5738?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3aa9feeafa35aafd43a4f9c90c8a9ef7&auto=format&fit=crop&w=2100&q=80");
-  background-repeat: no-repeat !important;
-  background-position: 50% 50% !important;
-  background-color: transparent !important;
-  background-color: red;
+  background-image: url("/assets/img/donate_banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+  
 }
 
 a {
@@ -326,15 +317,11 @@ a {
 .custom-select {
   position: relative;
   font-family: Arial;
-  padding: 0;
 }
 
 .custom-select select {
   display: none;
   /*hide original SELECT element:*/
-}
-.custom-select * {
-  font-size: 1rem;
 }
 
 .select-selected {
@@ -349,7 +336,7 @@ a {
   top: 14px;
   right: 10px;
   width: 0;
-  /* height: 0; */
+  height: 0;
   border: 6px solid transparent;
   border-color: #fff transparent transparent transparent;
 }
