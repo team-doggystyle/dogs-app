@@ -190,6 +190,11 @@ img {
   text-transform: uppercase !important;
 }
 
+.openbtn {
+  font-size: 50px;
+  cursor: pointer;
+}
+
 .overlay {
   height: 100%;
   width: 0;
