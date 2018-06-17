@@ -48,6 +48,9 @@ router.get("/dogs", function(req, res) {
     res.render("dogs", hbsObject);
   });
 });
+router.get("/dogs/addnewdog", function(req, res) {
+  res.render("addnewdog")
+});
 router.post("/dogs/addnewdog", function(req, res) {
   models.dog.create({ 
     name: req.body.name,
