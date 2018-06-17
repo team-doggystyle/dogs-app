@@ -197,10 +197,11 @@ a {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #AAA6A3;
+  /* background-color: rgba(0, 0, 0, 0.9); */
   overflow-x: hidden;
   transition: 0.5s;
+  opacity: 0.8;
 }
 
 .overlay-content {
@@ -215,7 +216,7 @@ a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
 }
@@ -232,6 +233,7 @@ a {
   font-size: 60px;
 }
 
+
 .home_background {
   background-size: cover;
   width: 100%;
@@ -240,7 +242,6 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: transparent;
-  
 }
 
 .dogs_background {
@@ -251,7 +252,6 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: transparent;
-  
 }
 
 .adopt_background {
@@ -262,7 +262,6 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: transparent;
-  
 }
 
 .about_background {
@@ -273,7 +272,6 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: transparent;
-  
 }
 
 .donate_background {
@@ -284,13 +282,33 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: transparent;
+}
+
+#donation_button {
+  text-align: center;
+}
+
+#myNav {
+
   
 }
 
-a {
+a{
   color: #546270;
   text-decoration: none;
   outline: 0;
+}
+
+a:hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #CD5C5C;
+  font-weight: bolder;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 #banner-wrap {
@@ -305,7 +323,6 @@ a {
 
 #main-wrap {
   padding: 40px;
-  text-align: center;
   font-size: 20px;
   line-height: 30px;
 }
