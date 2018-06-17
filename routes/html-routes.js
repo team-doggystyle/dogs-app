@@ -48,12 +48,26 @@ router.get("/dogs", function(req, res) {
     res.render("dogs", hbsObject);
   });
 });
-// router.get("/dogs/:id", function(req, res) {
- 
-// });
-// router.get("/dogs/addnewdog", function(req, res) {
-//   res.render("addnewdog");
-// });
+router.get("/dogs/addnewdog", function(req, res) {
+  res.render("addnewdog")
+});
+router.post("/dogs/addnewdog", function(req, res) {
+  models.dog.create({ 
+    name: req.body.name,
+    breed: req.body.breed,
+    age_years: req.body.age_years,
+    age_months: req.body.age_months,
+  })
+    // pass the result of our call
+    .then(function(dbDog) {
+      // log the result to our terminal/bash window
+      // console.log(dbDog);
+      // console.log("dbDog.dataValues.name", dbDog.dataValues.name)
+      var hbsObject = { name: dbDog.dataValues.name };
+      res.render("addnewdog", hbsObject);
+
+    });
+});
 
 router.get("/adopt", function(req, res) {
   res.render("adopt");

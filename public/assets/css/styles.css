@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 30rem;
   font-size: 100%;
   border: 0;
   width: 100%;
@@ -318,11 +319,12 @@ a {
   line-height: 30px;
 }
 
-/***** FORMS CSS *****/
+/***** ADDNEWDOG FORMS CSS *****/
 
 /*the container must be positioned relative:*/
 
 .custom-select {
+  display: inline-block;
   position: relative;
   font-family: Arial;
 }
