@@ -21,9 +21,7 @@ $(document).ready(function () {
         event.preventDefault();
 
         $("#registration").modal("hide").on("hidden.bs.modal", function () {
-            window.location.reload();
+                 window.location.reload();
         });
-
     });
-
 });
