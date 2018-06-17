@@ -5,34 +5,34 @@ module.exports = {
   seed: function (db) {
 
     let dogs = [{
-        name: "Bella",
-        breed: "Huskey",
-        adopted: false,
-        photo: "/assets/img/logo1.jpg"
-      },
-      {
-        name: "Lucy",
-        breed: "Jack Russell",
+        name: "Abby",
+        breed: "Boxer / German Shepherd Dog / Mixed (short coat)",
         adopted: true,
-        photo: "/assets/img/logo1.jpg"
+        photo: "/assets/img/successAdoptions/abby_boxer.jpg"
       },
       {
-        name: "Daisy",
-        breed: "Australian Shepherd",
+        name: "Alaska",
+        breed: "Terrier (medium coat)",
         adopted: true,
-        photo: "/assets/img/logo1.jpg"
+        photo: "/assets/img/successAdoptions/alaska_terrier.jpg"
       },
       {
-        name: "Bailey",
-        breed: "German Shepherd",
-        adopted: false,
-        photo: "/assets/img/logo1.jpg"
-      },
-      {
-        name: "Luna",
-        breed: "Pit bull",
+        name: "Albert",
+        breed: "Plott Hound / American Staffordshire Terrier / Mixed (short coat)",
         adopted: true,
-        photo: "/assets/img/logo1.jpg"
+        photo: "/assets/img/successAdoptions/albert_terrier.jpg"
+      },
+      {
+        name: "Amber",
+        breed: "Labrador Retriever / Chinese Shar-Pei / Mixed",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/amber_retriever.jpg"
+      },
+      {
+        name: "Baby",
+        breed: "Maltese / Poodle (Miniature) / Mixed (medium coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/baby_maltese.jpg"
       },
 
     ]
@@ -45,7 +45,6 @@ module.exports = {
         adopted: dog.adopted,
         photo: dog.photo
       })
-
     })
     return Promise.all(dogCreationPromises)
   }
