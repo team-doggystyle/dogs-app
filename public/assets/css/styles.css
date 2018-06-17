@@ -155,6 +155,10 @@ img {
   line-height: 35px;
 }
 
+.btn-primary {
+  margin-left: 175px;
+}
+
 .attn {
   text-align: center;
   color: red;
@@ -191,8 +195,21 @@ img {
 }
 
 .openbtn {
-  font-size: 50px;
+  font-size: 40px;
   cursor: pointer;
+  position: relative;
+  bottom: 10px;
+}
+
+.scrollbtn {
+  font-size: 40px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+}
+
+.navbar-fixed-top {
+
 }
 
 .overlay {
@@ -204,8 +221,8 @@ img {
   left: 0;
   background-color: #AAA6A3;
   overflow-x: hidden;
-  transition: 0.5s;
-  opacity: 0.8;
+  transition: 0.8s;
+  opacity: 0.9;
 }
 
 .overlay-content {
@@ -400,6 +417,7 @@ a:visited {
 .form {
   margin-left: 75px;
   margin-right: 75px;
+
 }
 
 /***** MEDIA QUERIES *****/
