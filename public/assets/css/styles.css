@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 30rem;
   font-size: 100%;
   border: 0;
   width: 100%;
@@ -325,11 +326,15 @@ a {
 .custom-select {
   position: relative;
   font-family: Arial;
+  padding: 0;
 }
 
 .custom-select select {
   display: none;
   /*hide original SELECT element:*/
+}
+.custom-select * {
+  font-size: 1rem;
 }
 
 .select-selected {
@@ -344,7 +349,7 @@ a {
   top: 14px;
   right: 10px;
   width: 0;
-  height: 0;
+  /* height: 0; */
   border: 6px solid transparent;
   border-color: #fff transparent transparent transparent;
 }

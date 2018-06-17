@@ -8,11 +8,6 @@ var router  = express.Router();
 // =============================================================
 var path = require("path");
 
-// Routes
-// =============================================================
-// router.get("/", function(req, res) {
-//    res.render("index");
-// });
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
@@ -44,7 +39,7 @@ router.get("/dogs/addnewdog", function(req, res) {
 });
 
 router.post("/dogs/addnewdog", function(req, res) {
-  models.dog.create({ 
+  models.Dog.create({ 
     name: req.body.name,
     breed: req.body.breed,
     age_years: req.body.age_years,
