@@ -8,6 +8,7 @@ body {
   font: 16px/1 'Montserrat', sans-serif;
   background: #ffffff;
   color: #415161;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -100,30 +101,29 @@ a {
   font-size: 20px;
 }
 
-#dog-container {
+/*Photo gallery
+**/
+.dogs_container {
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
 }
+.media { 
+  min-width: 0;
+  margin: 5px;
+  flex-wrap: wrap;
 
-#dog-block {
-  display: block;
-  text-decoration: none;
+}
+img {
+  width: 450px;
+  max-width: 100%; 
+  max-height: 600px; 
+  padding: 5px;
 }
 
 .navbar-brand {
-  position: center
+  position: center;
 }
-
-#dog-photo {
-  width: 50px;
-  height: 50px;
-}
-
-#dog-photo-block {
-  width: 200px;
-  height: 200px;
-}
-
 .nav-link {
   color: black;
   margin: -17px;
@@ -198,7 +198,6 @@ a {
   top: 0;
   left: 0;
   background-color: #AAA6A3;
-  /* background-color: rgba(0, 0, 0, 0.9); */
   overflow-x: hidden;
   transition: 0.5s;
   opacity: 0.8;
@@ -232,7 +231,6 @@ a {
   right: 45px;
   font-size: 60px;
 }
-
 
 .home_background {
   background-size: cover;
@@ -288,10 +286,6 @@ a {
   text-align: center;
 }
 
-#myNav {
-
-  
-}
 
 a{
   color: #546270;

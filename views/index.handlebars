@@ -31,21 +31,16 @@
     <h2>
       Recently adopted dogs:
     </h2>
-    <div>
-      <div>
-        <ul id="dog-container">
-          {{#each dogs}} {{#if adopted}}
-          <div id="dog-photo-block">
-            <li id="dog-block">
-              {{this.name}}
-            </li>
-            <img id="dog-photo" src="{{this.photo}}">
-            </img>
-          </div>
-          {{/if}} {{/each}}
-        </ul>
+
+    <div class="dogs_container">
+      <div class="media">
+        {{#each dogs}} {{#if adopted}}
+        <img src="{{this.photo}}">
+        {{/if}} {{/each}}
       </div>
     </div>
+
+
   </div>
 </div>
-
+</div>
