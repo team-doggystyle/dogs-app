@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var Dog = sequelize.define("Dog", {
     name: {
       type: DataTypes.STRING,
@@ -19,16 +19,15 @@ module.exports = function(sequelize, DataTypes) {
     adopted: {
       type: DataTypes.BOOLEAN,
       allowNull: true,
+    },
+    photo: {
+      type: DataTypes.STRING,
+      allowNull: true,
     }
-    // photo: {
-      
-    // type: DataTypes.STRING, 
-    // allowNull: false  
-    // } 
   });
   // Dog.associate = function(models) {
   //   models.User.hasMany(models.Photo);
   // };
-  console.log("What is a dog: ",Dog)
+  console.log("What is a dog: ", Dog)
   return Dog;
 };
