@@ -5,8 +5,6 @@
 var models  = require('../models');
 var express = require('express');
 var router  = express.Router();
-var jsdom = require('jsdom');
-$ = require('jquery')(new jsdom.JSDOM().window);
 var path = require("path");
 
 // Routes
