@@ -9,9 +9,29 @@ var path = require("path");
 
 // Routes
 // =============================================================
+// router.get("/", function(req, res) {
+//    res.render("index");
+// });
+
+// Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-   // res.send('You\'ve reached the homepage');
-   res.render("index");
+ models.Dog.findAll().then(function(data){
+    console.log(typeof data)
+    var dogObj = {
+      dogs: data
+    };
+     res.render("index", dogObj)
+ })
+});
+
+router.get("/home", function(req, res) {
+  models.Dog.findAll().then(function(data){
+    console.log(typeof data)
+    var dogObj = {
+      dogs: data
+    };
+     res.render("index", dogObj)
+ })
 });
 
 router.get("/dogs", function(req, res) {
@@ -30,9 +50,10 @@ router.get("/dogs", function(req, res) {
 // router.get("/dogs/:id", function(req, res) {
  
 // });
-router.get("/dogs/addnewdog", function(req, res) {
-  res.render("addnewdog");
-});
+// router.get("/dogs/addnewdog", function(req, res) {
+//   res.render("addnewdog");
+// });
+
 router.post("/dogs/addnewdog", function(req, res) {
   models.dog.create({ 
     name: req.body.name,
@@ -48,48 +69,30 @@ router.post("/dogs/addnewdog", function(req, res) {
       var hbsObject = { name: dbDog.dataValues.name };
       res.render("addnewdog", hbsObject);
 
-
-      // $(".form-helper").text(dbDog.dataValues.name + " has been added!");
-      // // displayUpdate(dbDog.dataValues.name);
-      // // redirect
-      // res.redirect("/dogs/addnewdog");
     });
 });
 
-// function displayUpdate(dogName) {
-//   $(".form-helper").html(dogName + " has been added!");
-// }
 
-// router.get("/adopt", function(req, res) {
-//   res.render("adopt");
-// });
+router.get("/adopt", function(req, res) {
+  res.render("adopt");
+});
+
+router.get("/about", function(req, res) {
+  res.render("about");
+});
+
+router.get("/application", function(req, res) {
+  res.render("application");
+});
 
 // router.post("/adopt/application", function(req, res) {
 // });
 
-// router.get("/help", function(req, res) {
-
-// });
+router.get("/donate", function(req, res) {
+      res.render("donate")
+});
 // router.post("/help/donate", function(req, res) {
+
 
 // });
  module.exports = router;
-// module.exports = function(app) {
-
-//   // Each of the below routes just handles the HTML page that the user gets sent to.
-
-//   // index route loads view.html
-//   app.get("/", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/blog.html"));
-//   });
-
-//   app.get("/cms", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/cms.html"));
-//   });
-
-//   // blog route loads blog.html
-//   app.get("/blog", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/blog.html"));
-//   });
-
-// };
