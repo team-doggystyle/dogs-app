@@ -159,7 +159,7 @@ opacity: 0.7;
 }
 
 .btn-primary {
-  margin-left: 175px;
+  margin-left: 200px;
 }
 
 .attn {
@@ -201,14 +201,24 @@ opacity: 0.7;
   font-size: 40px;
   cursor: pointer;
   position: relative;
-  bottom: 10px;
+  bottom: -40px;
+  color: #f9fd7f;
+  text-shadow: 4px 4px 8px black;
+  font-family: optima;
+  font-weight: bold;
+  -webkit-transition: all 0.12s ease-out;
+  -moz-transition:    all 0.12s ease-out;
+  -ms-transition:     all 0.12s ease-out;
+  -o-transition:      all 0.12s ease-out;
 }
 
-.scrollbtn {
-  font-size: 40px;
-  cursor: pointer;
-  position: fixed;
-  bottom: 10px;
+
+.openbtn:hover {
+  position: relative;  
+  text-shadow: 1px 1px #004d66, 
+               2px 2px #004d66, 
+               3px 3px #004d66, 
+               4px 4px #004d66;                              
 }
 
 .overlay {
@@ -220,7 +230,7 @@ opacity: 0.7;
   left: 0;
   background-color: #AAA6A3;
   overflow-x: hidden;
-  transition: 0.8s;
+  transition: 0.5s;
   opacity: 0.9;
 }
 
@@ -414,8 +424,8 @@ a:visited {
 }
 
 .form {
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /***** MEDIA QUERIES *****/
