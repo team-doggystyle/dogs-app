@@ -34,7 +34,85 @@ module.exports = {
         adopted: true,
         photo: "/assets/img/successAdoptions/baby_maltese.jpg"
       },
-
+      {
+        name: "Bailey",
+        breed: "Terrier / Mixed (short coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/bailey_terrier.jpg"
+      },
+      {
+        name: "Bailey",
+        breed: "Labrador Retriever / Shepherd / Mixed",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/bailey_retriever.jpg"
+      },
+      {
+        name: "Ballerina",
+        breed: "Poodle (unknown type) (medium coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/ballerina_poodle.jpg"
+      },
+      {
+        name: "Daisy",
+        breed: "Basset Hound",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/daisy_hound.jpg"
+      },
+      {
+        name: "Daniel",
+        breed: "Tibetan Terrier / Poodle (Miniature) / Mixed (medium coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/daniel_tibetan_terrier.jpg"
+      },
+      {
+        name: "Elsa",
+        breed: "Chihuahua (short coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/elsa_chihuahua.jpg"
+      },
+      {
+        name: "Gemma",
+        breed: "Husky",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/gemma_husky.jpg"
+      },
+      {
+        name: "Gilda",
+        breed: "Bulldog / Boston Terrier / Mixed (short coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/gilda_bulldog.jpg"
+      },
+      {
+        name: "Harley",
+        breed: "Cocker Spaniel / Mixed",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/harley_cocker_spaniel.jpg"
+      },
+      {
+        name: "Jake",
+        breed: "Terrier / Chihuahua / Mixed (short coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/jake_terrier.jpg"
+      },
+      {
+        name: "Katie",
+        breed: "Yorkshire Terrier Yorkie / Shih Tzu / Mixed (medium coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/katie_yorkie.jpg"
+      },
+      {
+        name: "Keiko",
+        breed: "Schnauzer / Terrier / Mixed (medium coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/keiko_schnauzer.jpg"
+      },
+      {
+        name: "William",
+        breed: "Pomeranian / Mixed (medium coat)",
+        adopted: true,
+        photo: "/assets/img/successAdoptions/william_pomeranian.jpg"
+      },
+      
     ]
 
     let dogCreationPromises = dogs.map(function (dog) {
