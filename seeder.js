@@ -6,19 +6,19 @@ module.exports = {
 
     let dogs = [{
         name: "Abby",
-        breed: "Boxer / German Shepherd Dog / Mixed (short coat)",
+        breed: "Boxer / German Shepherd Dog",
         adopted: true,
         photo: "/assets/img/successAdoptions/abby_boxer.jpg"
       },
       {
         name: "Alaska",
-        breed: "Terrier (medium coat)",
+        breed: "Terrier",
         adopted: true,
         photo: "/assets/img/successAdoptions/alaska_terrier.jpg"
       },
       {
         name: "Albert",
-        breed: "Plott Hound / American Staffordshire Terrier / Mixed (short coat)",
+        breed: "Plott Hound / American Staffordshire Terrier / Mixed",
         adopted: true,
         photo: "/assets/img/successAdoptions/albert_terrier.jpg"
       },
@@ -30,13 +30,13 @@ module.exports = {
       },
       {
         name: "Baby",
-        breed: "Maltese / Poodle (Miniature) / Mixed (medium coat)",
+        breed: "Maltese / Poodle (Miniature) / Mixed",
         adopted: true,
         photo: "/assets/img/successAdoptions/baby_maltese.jpg"
       },
       {
         name: "Bailey",
-        breed: "Terrier / Mixed (short coat)",
+        breed: "Terrier / Mixed",
         adopted: true,
         photo: "/assets/img/successAdoptions/bailey_terrier.jpg"
       },
@@ -48,7 +48,7 @@ module.exports = {
       },
       {
         name: "Ballerina",
-        breed: "Poodle (unknown type) (medium coat)",
+        breed: "Poodle",
         adopted: true,
         photo: "/assets/img/successAdoptions/ballerina_poodle.jpg"
       },
@@ -60,13 +60,13 @@ module.exports = {
       },
       {
         name: "Daniel",
-        breed: "Tibetan Terrier / Poodle (Miniature) / Mixed (medium coat)",
+        breed: "Tibetan Terrier / Poodle (Miniature) / Mixed",
         adopted: true,
         photo: "/assets/img/successAdoptions/daniel_tibetan_terrier.jpg"
       },
       {
         name: "Elsa",
-        breed: "Chihuahua (short coat)",
+        breed: "Chihuahua",
         adopted: true,
         photo: "/assets/img/successAdoptions/elsa_chihuahua.jpg"
       },
@@ -78,7 +78,7 @@ module.exports = {
       },
       {
         name: "Gilda",
-        breed: "Bulldog / Boston Terrier / Mixed (short coat)",
+        breed: "Bulldog / Boston Terrier / Mixed",
         adopted: true,
         photo: "/assets/img/successAdoptions/gilda_bulldog.jpg"
       },
@@ -90,25 +90,25 @@ module.exports = {
       },
       {
         name: "Jake",
-        breed: "Terrier / Chihuahua / Mixed (short coat)",
+        breed: "Terrier / Chihuahua / Mixed",
         adopted: true,
         photo: "/assets/img/successAdoptions/jake_terrier.jpg"
       },
       {
         name: "Katie",
-        breed: "Yorkshire Terrier Yorkie / Shih Tzu / Mixed (medium coat)",
+        breed: "Yorkshire Terrier Yorkie / Shih Tzu / Mixed",
         adopted: true,
         photo: "/assets/img/successAdoptions/katie_yorkie.jpg"
       },
       {
         name: "Keiko",
-        breed: "Schnauzer / Terrier / Mixed (medium coat)",
+        breed: "Schnauzer / Terrier / Mixed",
         adopted: true,
         photo: "/assets/img/successAdoptions/keiko_schnauzer.jpg"
       },
       {
         name: "William",
-        breed: "Pomeranian / Mixed (medium coat)",
+        breed: "Pomeranian / Mixed",
         adopted: true,
         photo: "/assets/img/successAdoptions/william_pomeranian.jpg"
       },

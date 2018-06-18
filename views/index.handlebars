@@ -22,14 +22,20 @@
       Recently adopted dogs:
     </h2>
 
-    <div class="dogs_container">
-      <div class="media">
+    <div class="row dog_container">
+      <div class="col-xs-12 media">
         {{#each dogs}} {{#if adopted}}
-        <img id="responsive-image" src="{{this.photo}}">
+        <div class="col-xs-12 col-sm-4 dog_image">
+          <img src="{{this.photo}}" class="dog_image">
+          <div class="dog_overlay">
+            <div class="dog_name">{{this.name}}</div>
+            <div class="dog_breed">{{this.breed}}</div>
+          </div>
+        </div>
+
         {{/if}} {{/each}}
       </div>
     </div>
-
 
   </div>
 </div>
