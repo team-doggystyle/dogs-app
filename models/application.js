@@ -9,11 +9,11 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
         },
         email: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: true,
         },
         phone: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.TEXT,
             allowNull: true,
         },
         newsletter: {
