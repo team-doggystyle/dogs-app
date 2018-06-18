@@ -33,7 +33,21 @@
 <body>
 
 	<script type="text/javascript">
-	</script> {{{ body }}}
+
+		var elementPosition = $('#myNav').offset();
+
+		$(window).scroll(function(){
+	        if($(window).scrollTop() > elementPosition.top){
+	            $('#myNav').css('position','fixed').css('top','185');
+	        } else {
+	            $('#myNav').css('position','static');
+	        }    
+		});
+
+	</script>
+
+	{{{ body }}}
+
 </body>
 
 </html>
