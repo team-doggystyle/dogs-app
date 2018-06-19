@@ -13,7 +13,7 @@
 
 
 # OS or Editor folders
-node_modules/
+node_modules
 .DS_Store
 Thumbs.db
 .cache
