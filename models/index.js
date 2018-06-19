@@ -10,8 +10,10 @@ var db        = {};
 
 if (process.env.JAWSDB_URL) {
   var sequelize = new Sequelize(process.env.JAWSDB_URL);
+  console.log("jawsdb_url", process.env.JAWSDB_URL)
 } else {
   var sequelize = new Sequelize(config.database, config.username, config.password, config);
+  console.log("no jawsdb :(")
 }
 
 
