@@ -478,6 +478,39 @@ a:visited {
   margin-right: 50px;
 }
 
+hr {
+  color: black;
+  margin-bottom: 50px;
+}
+
+.facebook-logo {
+  height: 20px;
+  float: left;
+  display: inline;
+  margin-left: 695px;
+  margin-right: 20px;
+}
+
+.email-logo {
+  height: 20px;
+  float: left;
+  display: inline;
+  margin-right: 5px;
+}
+
+.dog-logo {
+  height: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 5px;
+  font-family: book antiqua;
+  clear: both;
+
+}
+
 /***** MEDIA QUERIES *****/
 
 @media (max-width: 767px) {
