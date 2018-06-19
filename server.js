@@ -13,7 +13,8 @@ var handlebars = require('handlebars');
 // =============================================================
 var app = express();
 var PORT = process.env.PORT || 8080;
-var seeder = require('./seeder')
+dbPassword = process.env.DB_PASSWORD
+
 
 // Requiring our models for syncing
 var db = require("./models");

@@ -1,4 +1,5 @@
--- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS rescue;
--- Creates the "blogger" database --
-CREATE DATABASE rescue;
+
+-- DROP DATABASE IF EXISTS rescue;
+
+-- CREATE DATABASE rescue;
+USE lxtcw8ao5av3o6k6;
