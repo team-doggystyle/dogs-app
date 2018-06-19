@@ -10,7 +10,7 @@
 *.vi
 *~
 *.sass-cache
-
+git ad
 
 # OS or Editor folders
 node_modules
