@@ -112,7 +112,12 @@ module.exports = {
         adopted: true,
         photo: "/assets/img/successAdoptions/william_pomeranian.jpg"
       },
-      
+      {
+      name: "Misty",
+      breed: "Cocker Spaniel",
+      adopted: false,
+      photo: "/assets/img/available/Misty.jpg"
+      }
     ]
 
     let dogCreationPromises = dogs.map(function (dog) {
