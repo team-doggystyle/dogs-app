@@ -11,30 +11,38 @@
   </div>
   {{> navbar }}
   <div id="banner-wrap">
-    <div class="dogs_background">
+    <div class="home_background">
     </div>
   </div>
   <div id="main-wrap">
-    <h2>Available dogs: </h2>
+    <div>
+      <hr>
+    </div>
 
-    <ul>
-      {{#each dogs}}
-        {{#unless adopted}}
-          {{> dogs/dog-block adopted=true}}
-        {{/unless}}
-      {{/each}}
-    </ul>
+    <h2>Join the Cause for SB Paws!</h2>
+    <div>
+      <hr>
+    </div>
 
-    <h2>Recently adopted dogs:</h2>
+    <h2>
+      Available Dogs:
+    </h2>
 
-    <ul>
-      {{#each dogs}}
-        {{#if adopted}}
-          {{> dogs/dog-block adopted=false}}
-        {{/if}}
-      {{/each}}
-    </ul>
+    <div class="row dog_container">
+      <div class="col-xs-12 media">
+        {{#each dogs}} {{#unless adopted}}
+        <div class="col-xs-12 col-sm-4 dog_image">
+          <img src="{{this.photo}}" class="dog_image">
+          <div class="dog_overlay">
+            <div class="dog_name">{{this.name}}</div>
+            <div class="dog_breed">{{this.breed}}</div>
+          </div>
+        </div>
+
+        {{/unless}} {{/each}}
+      </div>
+    </div>
+
   </div>
 </div>
-
-{{> footer }}
+</div>
