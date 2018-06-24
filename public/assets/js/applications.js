@@ -5,8 +5,8 @@ $(document).ready(function () {
         var newApplicant = {
             firstName: $("#firstName").val(),
             lastName: $("#lastName").val(),
-            inputEmail: $("#inputEmail").val(),
-            inputPhone: $("#inputPhone").val(),
+            email: $("#inputEmail").val(),
+            phone: $("#inputPhone").val(),
             newsletter: true
         }
         console.log("New Applicant", newApplicant);
