@@ -505,13 +505,22 @@ hr {
 
 .facebook-logo {
   height: 20px;
-  display:inline-block;
-  margin-right: 10px;
+  /* float: left;
+  display: inline;
+  margin-left: 685px;
+  margin-right: 20px; */
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+
+}
 .email-logo {
   height: 20px;
-  display:inline-block;
+  /* float: left; */
+  /* display: inline; */
+  /* margin-right: 5px; */
 }
 
 .dog-logo {
